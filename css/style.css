@@ -1,9 +1,20 @@
-body {
-  color: green;
-  background-color: rgb(153, 150, 150);
+/* .card1 {
+  height: 200px;
+  width: 200px;
+} */
+
+.card-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* margin-top: 5%;
+  width: 80%; */
+  text-align: center;
 }
 
-#vijay {
-  text-align: center;
-  font-style: italic;
+.card {
+  border: 2px solid;
+  padding: 10px;
+  margin-bottom: 2%;
 }
