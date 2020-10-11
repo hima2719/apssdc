@@ -12,6 +12,7 @@ p {
 a {
   text-decoration: none;
   padding: 5px;
+  color: blue;
 }
 h3 {
   padding-left: 5px;
@@ -40,15 +41,18 @@ img {
   margin-top: 10px;
   width: 75px;
   height: 50px;
+  border-radius: 10px;
+  /* float: right; */
 }
 .header {
   display: flex;
   flex-direction: row;
   background-color: #d6eaf8;
   justify-content: space-between;
-  border: 2px solid black;
+  border: 2px dashed rgb(196, 195, 195);
   min-height: 120px;
   align-items: center;
+  /* border-radius: 25px; */
 }
 
 .nav1 {
@@ -67,18 +71,18 @@ img {
   justify-content: space-between;
   /* width: 98%; */
   padding: 10px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 .sidebar {
   width: 15%;
   background-color: #d6eaf8;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 .section {
   background-color: #d6eaf8;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 
   display: flex;
   justify-content: space-around;
@@ -88,13 +92,15 @@ img {
 
 .card {
   background-color: rgb(183, 226, 231);
-  border: 2px solid black;
+  /* border: 2px solid black; */
   text-align: center;
   margin: 10px;
+  border-radius: 20px;
 }
 
 .card:hover {
   background-color: beige;
+  border: 2px solid black;
 }
 
 .footer {
@@ -104,9 +110,10 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid black;
+  border: 2px dotted rgb(197, 195, 195);
   text-align: justify;
   max-height: 40px;
+  border-radius: 50px;
 }
 
 .nav2 {
@@ -133,7 +140,7 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .logo img {
