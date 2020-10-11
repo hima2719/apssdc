@@ -78,6 +78,7 @@ h3 {
 .sidebar {
   width: 15%;
   background-color: #d6eaf8;
+  margin-top: 20px;
   /* border: 2px solid black; */
 }
 
@@ -89,6 +90,7 @@ h3 {
   justify-content: space-around;
   flex-wrap: wrap;
   width: 65%;
+  margin-top: 20px;
 }
 
 .card {
@@ -102,6 +104,7 @@ h3 {
 .card:hover {
   background-color: beige;
   border: 2px solid black;
+  box-shadow: 2px 2px rgb(68, 67, 67);
 }
 
 .footer {
@@ -113,7 +116,7 @@ h3 {
   align-items: center;
   border: 2px dotted rgb(197, 195, 195);
   text-align: justify;
-  max-height: 40px;
+  /* max-height: 40px; */
   border-radius: 50px;
 }
 
@@ -138,6 +141,7 @@ h3 {
   height: 20px;
   width: 20px;
 }
+
 @media only screen and (max-width: 635px) {
   .header {
     display: flex;
