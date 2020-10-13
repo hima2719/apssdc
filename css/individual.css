@@ -1,7 +1,12 @@
+.container1 {
+  width: 90%;
+  margin: auto;
+}
 .main {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 20px;
 }
 
 .profile {
@@ -21,9 +26,10 @@
   /* margin: 20px; */
 }
 
-.p1 h5 {
+.p1 h4 {
   /* margin: 10px; */
   margin-top: 20px;
+  font-size: 16px;
 }
 .p2 {
   border: 2px solid #d6eaf8;
@@ -45,6 +51,11 @@
   text-decoration: none;
 }
 
+.p1:hover,
+.p2:hover {
+  box-shadow: 5px 5px #eaecee;
+}
+
 .img {
   height: 200px;
   width: 200px;
@@ -59,12 +70,13 @@
   border-radius: 25px;
 }
 
-.details h1 {
+.details h2 {
+  padding-top: 20px;
   padding-left: 20px;
 }
 
 .details p {
-  padding-left: 150px;
+  padding-left: 100px;
   padding-right: 20px;
 }
 
@@ -78,22 +90,98 @@
 }
 
 .details ul {
-  padding-left: 150px;
-}
-
-.container,
-.container-fluid,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl {
-  width: 80%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  padding-left: 100px;
 }
 
 /* .table {
   width: 90%;
 } */
+
+@media only screen and (max-width: 770px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+  }
+
+  .profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .p1 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .p1 h4 {
+    margin-top: 0;
+    /* padding-left: 15px; */
+  }
+
+  .pad {
+    padding-top: 15px;
+    padding-left: 50px;
+  }
+
+  .details {
+    width: 100%;
+  }
+
+  .details h2 {
+    padding-top: 10px;
+    /* font-size: 100%; */
+    padding-left: 5px;
+  }
+  .details p {
+    padding-left: 50px;
+    padding-right: 10px;
+    /* font-size: 75%; */
+  }
+  .details ul {
+    padding-left: 75px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .p1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .pad {
+    padding-top: 15px;
+    padding-left: 0px;
+  }
+}
+/* @media only screen and (max-width: 405px) {
+  .p1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .pad {
+    padding-left: 0;
+    padding-top: 10px;
+  }
+} */
+@media only screen and (max-width: 575px) {
+  .details h2 {
+    padding-top: 10px;
+    font-size: 100%;
+    padding-left: 5px;
+  }
+
+  .details p {
+    padding-left: 25px;
+    padding-right: 2px;
+    font-size: 75%;
+  }
+  .details .table td,
+  .details .table th {
+    padding: 2px;
+    font-size: 10px;
+  }
+
+  .details ul {
+    padding-left: 50px;
+  }
+}
